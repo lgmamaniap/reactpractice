@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Mensaje from './Mensaje';
 
-function App() {
+const Description = () => {
+  return <p>Este es el componente de descripcion</p>
+}
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Titulo de la App</h1>
+      <strong>Estoy aprendiendo react</strong>
+      <Mensaje />
+      <Description />
     </div>
   );
 }
