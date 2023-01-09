@@ -1,17 +1,14 @@
 import './App.css';
+import Contador from './Contador';
 import Mensaje from './Mensaje';
-
-const Description = () => {
-  return <p>Este es el componente de descripcion</p>
-}
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Titulo de la App</h1>
-      <strong>Estoy aprendiendo react</strong>
-      <Mensaje />
-      <Description />
+      <h1>Prueba de contador:</h1>
+      <br />
+      <Mensaje mensaje='El valor de contador es: '/>
+      <Contador />
     </div>
   );
 }
