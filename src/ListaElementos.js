@@ -30,13 +30,13 @@ const notes = [
 const ListaElementos = () => {
   return (
     notes ?
-      <li>
+      <ul>
         {
           notes.map((note) => {
             return <Note key={note.id} content={note.content} date={note.date} />
           })
         }
-      </li>
+      </ul>
       : <div>No hay contenido</div>
   )
 }
