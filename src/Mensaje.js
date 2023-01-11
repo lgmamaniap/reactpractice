@@ -1,6 +1,6 @@
-const Mensaje = () => {
+const Mensaje = ({mensaje}) => {
   return (
-    <h1>Hola Mundo desde mensaje</h1>
+    <h1>{mensaje}</h1>
   )
 }
 
