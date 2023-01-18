@@ -33,10 +33,10 @@ const ListaElementos = () => {
     console.log('adding Note')
   }
   return (
-    <>
+    <div>
       <Formulario addNote={addNote}/>
       { notes ?
-        <ul>
+        <ul className="listaElementos">
           {
             notes.map((note) => {
               return <Note key={note.id} content={note.content} date={note.date} />
@@ -45,7 +45,7 @@ const ListaElementos = () => {
         </ul>
         : <div>No hay contenido</div>
       }
-    </>
+    </div>
   )
 }
 
