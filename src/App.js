@@ -1,5 +1,4 @@
 import './App.css';
-import Formulario from './Formulario';
 // import Contador from './Contador';
 import ListaElementos from './ListaElementos';
 import Mensaje from './Mensaje';
@@ -12,7 +11,6 @@ const App = () => {
       <Mensaje mensaje='El valor de contador es: '/>
       {/* <Contador /> */}
       <ListaElementos />
-      <Formulario />
     </div>
   );
 }

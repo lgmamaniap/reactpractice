@@ -1,3 +1,4 @@
+import Formulario from "./Formulario"
 import Note from "./Note"
 
 const notes = [
@@ -28,16 +29,23 @@ const notes = [
 ]
 
 const ListaElementos = () => {
+  const addNote = () => {
+    console.log('adding Note')
+  }
   return (
-    notes ?
-      <ul>
-        {
-          notes.map((note) => {
-            return <Note key={note.id} content={note.content} date={note.date} />
-          })
-        }
-      </ul>
-      : <div>No hay contenido</div>
+    <>
+      <Formulario addNote={addNote}/>
+      { notes ?
+        <ul>
+          {
+            notes.map((note) => {
+              return <Note key={note.id} content={note.content} date={note.date} />
+            })
+          }
+        </ul>
+        : <div>No hay contenido</div>
+      }
+    </>
   )
 }
 
