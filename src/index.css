@@ -13,11 +13,11 @@ code {
 }
 
 .formulario {
-  background-color: red;
+  background-color: blue;
 }
 
 .listaElementos {
-  background-color: blue;
+  background-color: red;
   display: flex;
   align-items: center;
   justify-content: space-between;
