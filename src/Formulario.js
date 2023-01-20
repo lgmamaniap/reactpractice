@@ -5,7 +5,7 @@ const Formulario = ({addNote}) => {
     addNote(e.target.value)
   }
   return (
-    <div>
+    <div className="formulario">
       <input type={'text'} onChange={handleChange}/>
       <button>Crear nota</button>
     </div>
